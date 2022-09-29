@@ -1,17 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <nav-comp />
+  <!-- <home-comp/>
+<office-comp/> -->
+  <router-view></router-view>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavComp from "./components/NavComp.vue";
+// import OfficeComp from './components/OfficeComp.vue';
+// import HomeComp from './HomeComp.vue';
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    NavComp,
+    // OfficeComp,
+    // HomeComp,
+  },
+};
 </script>
 
 <style>
